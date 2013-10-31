@@ -50,7 +50,7 @@
 </script>
 </asp:Content>
 <asp:Content ContentPlaceHolderId="PlaceHolderBodyAreaClass" runat="server">
-<script type="text/javascript" src="~SiteCollection/_layouts/15/jquery-1.8.3.js" ></script>
+<script type="text/javascript" src="~SiteCollection/_layouts/15/jquery-1.8.3.min.js" ></script>
 <script type="text/javascript" src="~SiteCollection/_layouts/15/jquery.SPServices-2013.01.js" ></script>
 <script type="text/javascript">
 var $j = jQuery.noConflict(true);
