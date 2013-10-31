@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED2C52AA-BB91-4A51-A298-668036552EFF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RecordDataForm</RootNamespace>
+    <AssemblyName>RecordDataForm</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content types\Construction_Task\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bad40f79-c9db-436f-b273-b883d0532293}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\Record_Data\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b5f3a511-508b-489c-98cf-d063902aec2b}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{0d7bf85e-dcea-419b-a992-d7d7de043183}</FeatureId>
+    </None>
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{9389a6ca-30c7-48eb-98e6-266d4571b2a8}</FeatureId>
+    </None>
+    <None Include="Features\Feature3\Feature3.feature">
+      <FeatureId>{af7865aa-ecfa-4ed9-95a7-7e2f95416afa}</FeatureId>
+    </None>
+    <None Include="Fields\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{91cdb1ce-075c-4fab-9978-768f37265670}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="List instances\Construction Tasks\ListsConstruction_Tasks_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d3d73eb9-0fdb-4396-9d42-39a46557a929}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Construction Tasks\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a9586115-f628-4882-85ee-1b8999326d29}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Counters\ListsRFI_ID_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{366dd6e1-8167-461d-8d21-825641976706}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Counters\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{43a7be35-593a-420a-b9cf-482ef25dc2f3}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Record Data\ListsRecord Data_pages1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b1d8e059-1638-4ef4-b3e8-af87fdcf7ec2}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Record Data\ListsRecord Data_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3fe7dcad-d935-4c9b-8bad-8036592d6b06}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Record Data\ListsRecord Data_\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6144e059-218e-4753-a47c-acf345c9fc06}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Record Data\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{962a4fad-4e85-44c2-b07d-86a4e76bd527}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Site_Constants\ListsSite_Constants_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{57e13daf-b4ed-4ea4-9624-81314674a461}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Site_Constants\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3f0e4373-95df-49f8-adc1-7112efc5b6cd}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Submittal_Register\ListsSubmittal_Register_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3ef58c63-a5ec-4a33-9089-cff8cbde3774}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Submittal_Register\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{72adb3f1-4893-4112-8cc9-d4a1dc716252}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{82d5eab1-3d52-412f-9195-c454ee10def6}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="PropertyBags\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4dc33e8e-12bd-4684-9727-b4ccb36751d2}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content types\Construction_Task\Elements.xml" />
+    <Content Include="Content types\Record_Data\Elements.xml" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature3\Feature3.Template.xml">
+      <DependentUpon>Feature3.feature</DependentUpon>
+    </Content>
+    <Content Include="Fields\Elements.xml" />
+    <Content Include="List instances\Construction Tasks\Elements.xml" />
+    <Content Include="List instances\Construction Tasks\ListsConstruction_Tasks_pages\Elements.xml" />
+    <Content Include="List instances\Construction Tasks\Schema.xml" />
+    <Content Include="List instances\Counters\Elements.xml" />
+    <Content Include="List instances\Counters\ListsRFI_ID_pages\Elements.xml" />
+    <Content Include="List instances\Counters\Schema.xml" />
+    <Content Include="List instances\Record Data\Elements.xml" />
+    <Content Include="List instances\Record Data\ListsRecord Data_pages1\Elements.xml" />
+    <Content Include="List instances\Record Data\ListsRecord Data_pages\Elements.xml" />
+    <Content Include="List instances\Record Data\ListsRecord Data_pages\Files\Lists\Record Data\RD_SubResponse_Edit.aspx" />
+    <Content Include="List instances\Record Data\ListsRecord Data_\Elements.xml" />
+    <Content Include="List instances\Record Data\ListsRecord Data_\Files\Lists\Record Data\RD_Edit.aspx" />
+    <Content Include="List instances\Record Data\ListsRecord Data_\Files\Lists\Record Data\RD_New.aspx" />
+    <Content Include="List instances\Record Data\Schema.xml" />
+    <Content Include="List instances\Site_Constants\Elements.xml" />
+    <Content Include="List instances\Site_Constants\ListsSite_Constants_pages\Elements.xml" />
+    <Content Include="List instances\Site_Constants\Schema.xml" />
+    <Content Include="List instances\Submittal_Register\Elements.xml" />
+    <Content Include="List instances\Submittal_Register\ListsSubmittal_Register_pages\Elements.xml" />
+    <Content Include="List instances\Submittal_Register\Schema.xml" />
+    <Content Include="PropertyBags\Elements.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature1\resources.en-US.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature2\resources.en-US.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature3\resources.en-US.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

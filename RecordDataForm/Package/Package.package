@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="82d5eab1-3d52-412f-9195-c454ee10def6" solutionId="3d59f1ef-dde9-475a-bdfa-4bbfb66cd3f0" resetWebServer="false" sharePointProductVersion="15.0" name="RecordDataForm" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="0d7bf85e-dcea-419b-a992-d7d7de043183" />
+    <featureReference itemId="9389a6ca-30c7-48eb-98e6-266d4571b2a8" />
+    <featureReference itemId="af7865aa-ecfa-4ed9-95a7-7e2f95416afa" />
+  </features>
+</package>

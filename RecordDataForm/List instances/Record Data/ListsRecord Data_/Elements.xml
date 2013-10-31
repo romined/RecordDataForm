@@ -1,0 +1,667 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="ListsRecord Data_" HyperlinkBaseUrl="https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev" Url="Lists/Record Data" RootWebOnly="FALSE" Path="Files\Lists\Record Data" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="RD_Edit.aspx" Level="Published" Path="RD_Edit.aspx">
+			<AllUsersWebPart WebPartOrder="1" WebPartZoneID="Main" ID="g_37c78119_9ad7_4b66_bc1f_b8f2efe789c5"><![CDATA[<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Microsoft.SharePoint.WebPartPages.DataFormWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="InitialAsyncDataFetch" type="bool">False</property>
+        <property name="ChromeType" type="chrometype">None</property>
+        <property name="Height" type="string" />
+        <property name="CacheXslStorage" type="bool">True</property>
+        <property name="XslLink" type="string" null="true" />
+        <property name="ParameterBindings" type="string">
+		 &lt;ParameterBinding Name="ListItemId" Location="QueryString(ID)" DefaultValue="0"/&gt;
+		 &lt;ParameterBinding Name="weburl" Location="None" DefaultValue="https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev"/&gt;
+		 &lt;ParameterBinding Name="ListID" Location="None" DefaultValue="{$ListId:Lists/Record Data;}"/&gt;
+		 &lt;ParameterBinding Name="dvt_apos" Location="Postback;Connection"/&gt;
+		 &lt;ParameterBinding Name="ManualRefresh" Location="WPProperty[ManualRefresh]"/&gt;
+		 &lt;ParameterBinding Name="UserID" Location="CAMLVariable" DefaultValue="CurrentUserName"/&gt;
+		 &lt;ParameterBinding Name="Today" Location="CAMLVariable" DefaultValue="CurrentDate"/&gt;
+	 </property>
+        <property name="AllowZoneChange" type="bool">True</property>
+        <property name="AutoRefresh" type="bool">False</property>
+        <property name="XmlDefinitionLink" type="string" />
+        <property name="DataFields" type="string">@ID,ID;@ContentType,Content Type;@Title,Summary;@Modified,Modified;@Created,Created;@Author,Created By;@Editor,Modified By;@_UIVersionString,Version;@Attachments,Attachments;@File_x0020_Type,File Type;@FileLeafRef,Name (for use in forms);@FileDirRef,Path;@FSObjType,Item Type;@_HasCopyDestinations,Has Copy Destinations;@_CopySource,Copy Source;@ContentTypeId,Content Type ID;@_ModerationStatus,Approval Status;@_UIVersion,UI Version;@Created_x0020_Date,Created;@FileRef,URL Path;@ItemChildCount,Item Child Count;@FolderChildCount,Folder Child Count;@AppAuthor,App Created By;@AppEditor,App Modified By;@RD_Num,RD_Num;@RD_Cert_Name,RD_Cert_Name;@RD_Cert_Date,RD_Cert_Date;@RD_Status,RD_Status;@Submitter_Comments,Submitter_Comments;@Reviewer_Comments,Reviewer_Comments;@Record_x0020_Data_x0020_Workflow,Record Data Workflow;@RE_Response_Date,RE_Response_Date;@Submited_Date,Submited_Date;@Form_Rev,Form_Rev;@Submitted_By,Submitted_By;@Submitter_Co,Submitter_Co;@PublishingContactEmail,Contact E-Mail Address;@CompanyNumber,Company Main Phone;@RD_Project_Num,RD_Project_Num;@RD_Designer,RD_Designer;@RD_Project,RD_Project;@RD_Owner_x002F_PCM,RD_Owner/PCM;@RD_Contractor,RD_Contractor;@Contractor_Cert,Contractor_Cert;@RD_Signature,RD_Signature;@SpecNum,SpecNum;@DrawingNum,DrawingNum;@DetailDescription,DetailDescription;@RecordDataNewForm,RecordDataNewForm;@SPFormInternalID,ConstructionTaskGUID;@Record_x0020_Data_x0020_State,Record Data State;@SubmittalRegisterItemGUID,SubmittalRegisterItemGUID;@ReSubmitReady,ReSubmitReady;</property>
+        <property name="NoDefaultStyle" type="string">TRUE</property>
+        <property name="ViewFlag" type="string">1048584</property>
+        <property name="CatalogIconImageUrl" type="string" />
+        <property name="ListUrl" type="string" />
+        <property name="AutoRefreshInterval" type="int">60</property>
+        <property name="AllowConnect" type="bool">True</property>
+        <property name="DataSourcesString" type="string">&lt;%@ Register TagPrefix="sharepoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %&gt;&lt;%@ Register TagPrefix="webpartpages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %&gt;&lt;sharepoint:SPDataSource runat="server" DataSourceMode="ListItem" SelectCommand="&amp;lt;View&amp;gt;&amp;lt;Query&amp;gt;&amp;lt;Where&amp;gt;&amp;lt;Eq&amp;gt;&amp;lt;FieldRef Name=&amp;quot;ContentType&amp;quot;/&amp;gt;&amp;lt;Value Type=&amp;quot;Text&amp;quot;&amp;gt;Record_Data&amp;lt;/Value&amp;gt;&amp;lt;/Eq&amp;gt;&amp;lt;/Where&amp;gt;&amp;lt;/Query&amp;gt;&amp;lt;/View&amp;gt;" UpdateCommand="" InsertCommand="" DeleteCommand="" UseInternalName="True" UseServerDataFormat="True"&gt;&lt;SelectParameters&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="ListItemId" PropertyName="ParameterValues" DefaultValue="0" Name="ListItemId"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="weburl" PropertyName="ParameterValues" DefaultValue="https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev" Name="weburl"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="ListID" PropertyName="ParameterValues" DefaultValue="{$ListId:Lists/Record Data;}" Name="ListID"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;/SelectParameters&gt;
+&lt;UpdateParameters&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="ListItemId" PropertyName="ParameterValues" DefaultValue="0" Name="ListItemId"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="weburl" PropertyName="ParameterValues" DefaultValue="https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev" Name="weburl"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="ListID" PropertyName="ParameterValues" DefaultValue="{$ListId:Lists/Record Data;}" Name="ListID"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;/UpdateParameters&gt;
+&lt;InsertParameters&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="ListItemId" PropertyName="ParameterValues" DefaultValue="0" Name="ListItemId"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="weburl" PropertyName="ParameterValues" DefaultValue="https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev" Name="weburl"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="ListID" PropertyName="ParameterValues" DefaultValue="{$ListId:Lists/Record Data;}" Name="ListID"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;/InsertParameters&gt;
+&lt;DeleteParameters&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="ListItemId" PropertyName="ParameterValues" DefaultValue="0" Name="ListItemId"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="weburl" PropertyName="ParameterValues" DefaultValue="https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev" Name="weburl"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="ListID" PropertyName="ParameterValues" DefaultValue="{$ListId:Lists/Record Data;}" Name="ListID"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;/DeleteParameters&gt;
+&lt;/sharepoint:SPDataSource&gt;
+</property>
+        <property name="AllowClose" type="bool">True</property>
+        <property name="ShowWithSampleData" type="bool">False</property>
+        <property name="Xsl" type="string">
+
+
+
+&lt;xsl:stylesheet xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:dsp="http://schemas.microsoft.com/sharepoint/dsp" version="1.0" exclude-result-prefixes="xsl msxsl ddwrt" xmlns:ddwrt="http://schemas.microsoft.com/WebParts/v2/DataView/runtime" xmlns:asp="http://schemas.microsoft.com/ASPNET/20" xmlns:__designer="http://schemas.microsoft.com/WebParts/v2/DataView/designer" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:SharePoint="Microsoft.SharePoint.WebControls" xmlns:ddwrt2="urn:frontpage:internal"&gt;
+	&lt;xsl:output method="html" indent="no"/&gt;
+	&lt;xsl:decimal-format NaN=""/&gt;
+	&lt;xsl:param name="dvt_apos"&gt;&amp;apos;&lt;/xsl:param&gt;
+	&lt;xsl:param name="ManualRefresh"&gt;&lt;/xsl:param&gt;
+	&lt;xsl:variable name="dvt_1_automode"&gt;0&lt;/xsl:variable&gt;
+	&lt;xsl:template match="/" xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:dsp="http://schemas.microsoft.com/sharepoint/dsp" xmlns:asp="http://schemas.microsoft.com/ASPNET/20" xmlns:__designer="http://schemas.microsoft.com/WebParts/v2/DataView/designer" xmlns:SharePoint="Microsoft.SharePoint.WebControls"&gt;
+		&lt;xsl:choose&gt;
+			&lt;xsl:when test="($ManualRefresh = 'True')"&gt;
+				&lt;table width="100%" border="0" cellpadding="0" cellspacing="0"&gt;
+					&lt;tr&gt;
+						&lt;td valign="top"&gt;
+							&lt;xsl:call-template name="dvt_1"/&gt;
+						&lt;/td&gt;
+						&lt;td width="1%" class="ms-vb" valign="top"&gt;
+							&lt;img src="/_layouts/15/images/staticrefresh.gif" id="ManualRefresh" border="0" onclick="javascript: {ddwrt:GenFireServerEvent('__cancel')}" alt="Click here to refresh the dataview."/&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+				&lt;/table&gt;
+			&lt;/xsl:when&gt;
+			&lt;xsl:otherwise&gt;
+				&lt;xsl:call-template name="dvt_1"/&gt;
+			&lt;/xsl:otherwise&gt;
+		&lt;/xsl:choose&gt;
+	&lt;/xsl:template&gt;
+	
+	&lt;xsl:template name="dvt_1"&gt;
+		&lt;xsl:variable name="dvt_StyleName"&gt;ListForm&lt;/xsl:variable&gt;
+		&lt;xsl:variable name="Rows" select="/dsQueryResponse/Rows/Row"/&gt;
+		&lt;div&gt;
+			&lt;span id="part1"&gt;
+				&lt;table border="0" width="100%"&gt;
+					&lt;xsl:call-template name="dvt_1.body"&gt;
+						&lt;xsl:with-param name="Rows" select="$Rows"/&gt;
+					&lt;/xsl:call-template&gt;
+				&lt;/table&gt;
+			&lt;/span&gt;
+			&lt;SharePoint:AttachmentUpload runat="server" ControlMode="Edit"/&gt;
+			&lt;SharePoint:ItemHiddenVersion runat="server" ControlMode="Edit"/&gt;
+		&lt;/div&gt;
+	&lt;/xsl:template&gt;
+	&lt;xsl:template name="dvt_1.body"&gt;
+		&lt;xsl:param name="Rows"/&gt;
+		
+		&lt;tr&gt;
+			&lt;td class="ms-toolbar" nowrap="nowrap"&gt;
+				&lt;SharePoint:FormToolBar runat="server" ControlMode="Edit"/&gt;
+				&lt;SharePoint:ItemValidationFailedMessage runat="server" ControlMode="Edit"/&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;xsl:for-each select="$Rows"&gt;
+			&lt;xsl:call-template name="dvt_1.rowedit"/&gt;
+		&lt;/xsl:for-each&gt;
+		&lt;tr&gt;
+			&lt;td class="ms-toolbar" nowrap="nowrap"&gt;
+				&lt;table&gt;
+					&lt;tr&gt;
+						&lt;td class="ms-descriptiontext" nowrap="nowrap"&gt;
+							&lt;SharePoint:CreatedModifiedInfo ControlMode="Edit" runat="server"/&gt;
+						&lt;/td&gt;
+						&lt;td width="99%" class="ms-toolbar" nowrap="nowrap"&gt;&lt;IMG SRC="/_layouts/15/images/blank.gif" width="1" height="18"/&gt;&lt;/td&gt;
+						&lt;td class="ms-toolbar" nowrap="nowrap"&gt;
+							&lt;SharePoint:SaveButton runat="server" ControlMode="Edit" id="savebutton2"/&gt;
+						&lt;/td&gt;
+						&lt;td class="ms-separator"&gt;&amp;#160;&lt;/td&gt;
+						&lt;td class="ms-toolbar" nowrap="nowrap" align="right"&gt;
+							&lt;SharePoint:GoBackButton runat="server" ControlMode="Edit" id="gobackbutton2"/&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+				&lt;/table&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/xsl:template&gt;
+	&lt;xsl:template name="dvt_1.rowedit"&gt;
+		&lt;xsl:param name="Pos" select="position()"/&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				&lt;table border="0" cellspacing="0" width="100%"&gt;
+					&lt;tr&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Project:          15-1&lt;/nobr&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Project Number: 15-1-1789&lt;/nobr&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;						
+					&lt;/tr&gt;	
+					&lt;tr&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Contractor:          B3CK&lt;/nobr&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Designer:          LAN&lt;/nobr&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+
+					&lt;tr&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Description&lt;span class="ms-formvalidation"&gt; *&lt;/span&gt;
+								&lt;/nobr&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+						&lt;td width="400px" valign="top" class="ms-formbody"&gt;
+							&lt;SharePoint:FormField runat="server" id="ff1{$Pos}" ControlMode="Display" FieldName="Title" __designer:bind="{ddwrt:DataBind('u',concat('ff1',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@Title')}"/&gt;
+							&lt;SharePoint:FieldDescription runat="server" id="ff1description{$Pos}" FieldName="Title" ControlMode="Display"/&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Form Number&lt;/nobr&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+						&lt;td width="400px" valign="top" class="ms-formbody"&gt;
+							&lt;SharePoint:FormField runat="server" id="ff2{$Pos}" ControlMode="Display" FieldName="RD_Num" __designer:bind="{ddwrt:DataBind('u',concat('ff2',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@RD_Num')}"/&gt;
+							&lt;SharePoint:FieldDescription runat="server" id="ff2description{$Pos}" FieldName="RD_Num" ControlMode="Display"/&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Specification&lt;/nobr&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+						&lt;td width="400px" valign="top" class="ms-formbody"&gt;
+							&lt;SharePoint:FormField runat="server" id="ff21{$Pos}" ControlMode="Display" FieldName="SpecNum" __designer:bind="{ddwrt:DataBind('u',concat('ff21',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@SpecNum')}"/&gt;
+							&lt;SharePoint:FieldDescription runat="server" id="ff21description{$Pos}" FieldName="SpecNum" ControlMode="Display"/&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Drawing Number&lt;/nobr&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+						&lt;td width="400px" valign="top" class="ms-formbody"&gt;
+							&lt;SharePoint:FormField runat="server" id="ff22{$Pos}" ControlMode="Display" FieldName="DrawingNum" __designer:bind="{ddwrt:DataBind('u',concat('ff22',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@DrawingNum')}"/&gt;
+							&lt;SharePoint:FieldDescription runat="server" id="ff22description{$Pos}" FieldName="DrawingNum" ControlMode="Display"/&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Detail Description&lt;/nobr&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+						&lt;td width="400px" valign="top" class="ms-formbody"&gt;
+							&lt;SharePoint:FormField runat="server" id="ff23{$Pos}" ControlMode="Display" FieldName="DetailDescription" __designer:bind="{ddwrt:DataBind('u',concat('ff23',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@DetailDescription')}"/&gt;
+							&lt;SharePoint:FieldDescription runat="server" id="ff23description{$Pos}" FieldName="DetailDescription" ControlMode="Display"/&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Status&lt;/nobr&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+						&lt;td width="400px" valign="top" class="ms-formbody"&gt;
+							&lt;SharePoint:FormField runat="server" id="ff3{$Pos}" ControlMode="Edit" FieldName="RD_Status" __designer:bind="{ddwrt:DataBind('u',concat('ff3',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@RD_Status')}"/&gt;
+							&lt;SharePoint:FieldDescription runat="server" id="ff3description{$Pos}" FieldName="RD_Status" ControlMode="Edit"/&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Contractor Comments&lt;/nobr&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+						&lt;td width="400px" valign="top" class="ms-formbody"&gt;
+							&lt;SharePoint:FormField runat="server" id="ff4{$Pos}" ControlMode="Display" FieldName="Submitter_Comments" __designer:bind="{ddwrt:DataBind('u',concat('ff4',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@Submitter_Comments')}"/&gt;
+							&lt;SharePoint:FieldDescription runat="server" id="ff4description{$Pos}" FieldName="Submitter_Comments" ControlMode="Display"/&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;RE Comments&lt;/nobr&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+						&lt;td width="400px" valign="top" class="ms-formbody"&gt;
+							&lt;SharePoint:FormField runat="server" id="ff5{$Pos}" ControlMode="Edit" FieldName="Reviewer_Comments" __designer:bind="{ddwrt:DataBind('u',concat('ff5',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@Reviewer_Comments')}"/&gt;
+							&lt;SharePoint:FieldDescription runat="server" id="ff5description{$Pos}" FieldName="Reviewer_Comments" ControlMode="Edit"/&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;	
+					&lt;tr&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Courtesy Copy&lt;/nobr&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+						&lt;td width="400px" valign="top" class="ms-formbody"&gt;
+							&lt;SharePoint:FormField runat="server" id="ff31{$Pos}" ControlMode="Edit" FieldName="FormCC" __designer:bind="{ddwrt:DataBind('u',concat('ff31',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@FormCC')}"/&gt;
+							&lt;SharePoint:FieldDescription runat="server" id="ff31description{$Pos}" FieldName="FormCC" ControlMode="Edit"/&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					
+					&lt;tr id="idAttachmentsRow"&gt;
+						&lt;td nowrap="true" valign="top" class="ms-formlabel" width="20%"&gt;
+							&lt;SharePoint:FieldLabel ControlMode="Display" FieldName="Attachments" runat="server"/&gt;
+						&lt;/td&gt;
+						&lt;td valign="top" class="ms-formbody" width="80%"&gt;
+							&lt;SharePoint:FormField runat="server" id="AttachmentsField" ControlMode="Display" FieldName="Attachments" __designer:bind="{ddwrt:DataBind('u','AttachmentsField','Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@Attachments')}"/&gt;
+							&lt;script&gt;
+          var elm = document.getElementById(&amp;quot;idAttachmentsTable&amp;quot;);
+          if (elm == null || elm.rows.length == 0)
+          document.getElementById(&amp;quot;idAttachmentsRow&amp;quot;).style.display=&amp;apos;none&amp;apos;;
+        &lt;/script&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;xsl:if test="$dvt_1_automode = '1'" ddwrt:cf_ignore="1"&gt;
+						&lt;tr&gt;
+							&lt;td colspan="99" class="ms-vb"&gt;
+								&lt;span ddwrt:amkeyfield="ID" ddwrt:amkeyvalue="ddwrt:EscapeDelims(string(@ID))" ddwrt:ammode="view"&gt;&lt;/span&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+					&lt;/xsl:if&gt;
+				&lt;/table&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;	</property>
+        <property name="EnableOriginalValue" type="bool">False</property>
+        <property name="Default" type="string">FALSE</property>
+        <property name="Hidden" type="bool">False</property>
+        <property name="ListName" type="string">{$ListId:Lists/Record Data;}</property>
+        <property name="DataSourceID" type="string" />
+        <property name="FireInitialRow" type="bool">True</property>
+        <property name="ManualRefresh" type="bool">False</property>
+        <property name="ViewFlags" type="Microsoft.SharePoint.SPViewFlags, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Hidden, Default</property>
+        <property name="ChromeState" type="chromestate">Normal</property>
+        <property name="AllowHide" type="bool">True</property>
+        <property name="ListDisplayName" type="string" />
+        <property name="SampleData" type="string" null="true" />
+        <property name="AsyncRefresh" type="bool">False</property>
+        <property name="Title" type="string">Record Data</property>
+        <property name="ListId" type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">$ListId:Lists/Record Data;</property>
+        <property name="Description" type="string" />
+        <property name="AllowMinimize" type="bool">True</property>
+        <property name="TitleUrl" type="string" />
+        <property name="CacheXslTimeOut" type="int">86400</property>
+        <property name="DisplayName" type="string">Record Data</property>
+        <property name="PageType" type="Microsoft.SharePoint.PAGETYPE, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">PAGE_EDITFORM</property>
+        <property name="Width" type="string" />
+        <property name="AllowEdit" type="bool">True</property>
+        <property name="ExportMode" type="exportmode">All</property>
+        <property name="Direction" type="direction">NotSet</property>
+        <property name="PageSize" type="int">-1</property>
+        <property name="ViewContentTypeId" type="string" />
+        <property name="HelpUrl" type="string" />
+        <property name="XmlDefinition" type="string" />
+        <property name="UseSQLDataSourcePaging" type="bool">True</property>
+        <property name="TitleIconImageUrl" type="string" />
+        <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+        <property name="HelpMode" type="helpmode">Modeless</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>]]></AllUsersWebPart>
+		</File>
+		<File Url="RD_New.aspx" Level="Published" Path="RD_New.aspx">
+			<AllUsersWebPart WebPartOrder="1" WebPartZoneID="Main" ID="g_5e37d692_4222_4bcd_bd80_cc7e70f5ad0c"><![CDATA[<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Microsoft.SharePoint.WebPartPages.DataFormWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="InitialAsyncDataFetch" type="bool">False</property>
+        <property name="ChromeType" type="chrometype">None</property>
+        <property name="Height" type="string" />
+        <property name="CacheXslStorage" type="bool">True</property>
+        <property name="XslLink" type="string" null="true" />
+        <property name="ParameterBindings" type="string">
+		 &lt;ParameterBinding Name="ListItemId" Location="QueryString(ID)" DefaultValue="0"/&gt;
+		 &lt;ParameterBinding Name="weburl" Location="None" DefaultValue="https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev"/&gt;
+		 &lt;ParameterBinding Name="ListID" Location="None" DefaultValue="{$ListId:Lists/Record Data;}"/&gt;
+		 &lt;ParameterBinding Name="dvt_apos" Location="Postback;Connection"/&gt;
+		 &lt;ParameterBinding Name="ManualRefresh" Location="WPProperty[ManualRefresh]"/&gt;
+		 &lt;ParameterBinding Name="UserID" Location="CAMLVariable" DefaultValue="CurrentUserName"/&gt;
+		 &lt;ParameterBinding Name="Today" Location="CAMLVariable" DefaultValue="CurrentDate"/&gt;
+	 </property>
+        <property name="AllowZoneChange" type="bool">True</property>
+        <property name="AutoRefresh" type="bool">False</property>
+        <property name="XmlDefinitionLink" type="string" />
+        <property name="DataFields" type="string">@ID,ID;@ContentType,Content Type;@Title,Summary;@Modified,Modified;@Created,Created;@Author,Created By;@Editor,Modified By;@_UIVersionString,Version;@Attachments,Attachments;@File_x0020_Type,File Type;@FileLeafRef,Name (for use in forms);@FileDirRef,Path;@FSObjType,Item Type;@_HasCopyDestinations,Has Copy Destinations;@_CopySource,Copy Source;@ContentTypeId,Content Type ID;@_ModerationStatus,Approval Status;@_UIVersion,UI Version;@Created_x0020_Date,Created;@FileRef,URL Path;@ItemChildCount,Item Child Count;@FolderChildCount,Folder Child Count;@AppAuthor,App Created By;@AppEditor,App Modified By;@RD_Num,RD_Num;@RD_Cert_Name,RD_Cert_Name;@RD_Cert_Date,RD_Cert_Date;@RD_Status,RD_Status;@Submitter_Comments,Submitter_Comments;@Reviewer_Comments,Reviewer_Comments;@Record_x0020_Data_x0020_Workflow,Record Data Workflow;@RE_Response_Date,RE_Response_Date;@Submited_Date,Submited_Date;@Form_Rev,Form_Rev;@Submitted_By,Submitted_By;@Submitter_Co,Submitter_Co;@PublishingContactEmail,Contact E-Mail Address;@CompanyNumber,Company Main Phone;@RD_Project_Num,RD_Project_Num;@RD_Designer,RD_Designer;@RD_Project,RD_Project;@RD_Owner_x002F_PCM,RD_Owner/PCM;@RD_Contractor,RD_Contractor;@Contractor_Cert,Contractor_Cert;@RD_Signature,RD_Signature;@SpecNum,SpecNum;@DrawingNum,DrawingNum;@DetailDescription,DetailDescription;@RecordDataNewForm,RecordDataNewForm;@SPFormInternalID,ConstructionTaskGUID;@Record_x0020_Data_x0020_State,Record Data State;@SubmittalRegisterItemGUID,SubmittalRegisterItemGUID;@ReSubmitReady,ReSubmitReady;</property>
+        <property name="NoDefaultStyle" type="string">TRUE</property>
+        <property name="ViewFlag" type="string">1048584</property>
+        <property name="CatalogIconImageUrl" type="string" />
+        <property name="ListUrl" type="string" />
+        <property name="AutoRefreshInterval" type="int">60</property>
+        <property name="AllowConnect" type="bool">True</property>
+        <property name="DataSourcesString" type="string">&lt;%@ Register TagPrefix="sharepoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %&gt;&lt;%@ Register TagPrefix="webpartpages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %&gt;&lt;sharepoint:SPDataSource runat="server" DataSourceMode="ListItem" SelectCommand="&amp;lt;View&amp;gt;&amp;lt;Query&amp;gt;&amp;lt;Where&amp;gt;&amp;lt;Eq&amp;gt;&amp;lt;FieldRef Name=&amp;quot;ContentType&amp;quot;/&amp;gt;&amp;lt;Value Type=&amp;quot;Text&amp;quot;&amp;gt;Record_Data&amp;lt;/Value&amp;gt;&amp;lt;/Eq&amp;gt;&amp;lt;/Where&amp;gt;&amp;lt;/Query&amp;gt;&amp;lt;/View&amp;gt;" UpdateCommand="" InsertCommand="" DeleteCommand="" UseInternalName="True" UseServerDataFormat="True"&gt;&lt;SelectParameters&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="ListItemId" PropertyName="ParameterValues" DefaultValue="0" Name="ListItemId"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="weburl" PropertyName="ParameterValues" DefaultValue="https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev" Name="weburl"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="ListID" PropertyName="ParameterValues" DefaultValue="{$ListId:Lists/Record Data;}" Name="ListID"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;/SelectParameters&gt;
+&lt;UpdateParameters&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="ListItemId" PropertyName="ParameterValues" DefaultValue="0" Name="ListItemId"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="weburl" PropertyName="ParameterValues" DefaultValue="https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev" Name="weburl"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="ListID" PropertyName="ParameterValues" DefaultValue="{$ListId:Lists/Record Data;}" Name="ListID"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;/UpdateParameters&gt;
+&lt;InsertParameters&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="ListItemId" PropertyName="ParameterValues" DefaultValue="0" Name="ListItemId"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="weburl" PropertyName="ParameterValues" DefaultValue="https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev" Name="weburl"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="ListID" PropertyName="ParameterValues" DefaultValue="{$ListId:Lists/Record Data;}" Name="ListID"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;/InsertParameters&gt;
+&lt;DeleteParameters&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="ListItemId" PropertyName="ParameterValues" DefaultValue="0" Name="ListItemId"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="weburl" PropertyName="ParameterValues" DefaultValue="https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev" Name="weburl"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;webpartpages:DataFormParameter ParameterKey="ListID" PropertyName="ParameterValues" DefaultValue="{$ListId:Lists/Record Data;}" Name="ListID"&gt;&lt;/webpartpages:DataFormParameter&gt;
+&lt;/DeleteParameters&gt;
+&lt;/sharepoint:SPDataSource&gt;
+</property>
+        <property name="AllowClose" type="bool">True</property>
+        <property name="ShowWithSampleData" type="bool">False</property>
+        <property name="Xsl" type="string">
+
+
+
+
+
+
+
+&lt;xsl:stylesheet xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:dsp="http://schemas.microsoft.com/sharepoint/dsp" version="1.0" exclude-result-prefixes="xsl msxsl ddwrt" xmlns:ddwrt="http://schemas.microsoft.com/WebParts/v2/DataView/runtime" xmlns:asp="http://schemas.microsoft.com/ASPNET/20" xmlns:__designer="http://schemas.microsoft.com/WebParts/v2/DataView/designer" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:SharePoint="Microsoft.SharePoint.WebControls" xmlns:ddwrt2="urn:frontpage:internal"&gt;
+	&lt;xsl:output method="html" indent="no"/&gt;
+	&lt;xsl:decimal-format NaN=""/&gt;
+	&lt;xsl:param name="dvt_apos"&gt;'&lt;/xsl:param&gt;
+	&lt;xsl:param name="ManualRefresh"&gt;&lt;/xsl:param&gt;
+	&lt;xsl:variable name="dvt_1_automode"&gt;0&lt;/xsl:variable&gt;
+	&lt;xsl:template match="/" xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:dsp="http://schemas.microsoft.com/sharepoint/dsp" xmlns:asp="http://schemas.microsoft.com/ASPNET/20" xmlns:__designer="http://schemas.microsoft.com/WebParts/v2/DataView/designer" xmlns:SharePoint="Microsoft.SharePoint.WebControls"&gt;
+		&lt;xsl:choose&gt;
+			&lt;xsl:when test="($ManualRefresh = 'True')"&gt;
+				&lt;table width="100%" border="0" cellpadding="0" cellspacing="0"&gt;
+					&lt;tr&gt;
+						&lt;td valign="top"&gt;
+							&lt;xsl:call-template name="dvt_1"/&gt;
+						&lt;/td&gt;
+						&lt;td width="1%" class="ms-vb" valign="top"&gt;
+							&lt;img src="/_layouts/15/images/staticrefresh.gif" id="ManualRefresh" border="0" onclick="javascript: {ddwrt:GenFireServerEvent('__cancel')}" alt="Click here to refresh the dataview."/&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+				&lt;/table&gt;
+			&lt;/xsl:when&gt;
+			&lt;xsl:otherwise&gt;
+				&lt;xsl:call-template name="dvt_1"/&gt;
+			&lt;/xsl:otherwise&gt;
+		&lt;/xsl:choose&gt;
+	&lt;/xsl:template&gt;
+	
+	&lt;xsl:template name="dvt_1"&gt;
+		&lt;xsl:variable name="dvt_StyleName"&gt;ListForm&lt;/xsl:variable&gt;
+		&lt;xsl:variable name="Rows" select="/dsQueryResponse/Rows/Row"/&gt;
+		&lt;div&gt;
+			&lt;span id="part1"&gt;
+				&lt;table border="0" width="100%"&gt;
+					&lt;xsl:call-template name="dvt_1.body"&gt;
+						&lt;xsl:with-param name="Rows" select="$Rows"/&gt;
+					&lt;/xsl:call-template&gt;
+				&lt;/table&gt;
+			&lt;/span&gt;
+			&lt;SharePoint:AttachmentUpload runat="server" ControlMode="New"/&gt;
+			&lt;SharePoint:ItemHiddenVersion runat="server" ControlMode="New"/&gt;
+		&lt;/div&gt;
+	&lt;/xsl:template&gt;
+	&lt;xsl:template name="dvt_1.body"&gt;
+		&lt;xsl:param name="Rows"/&gt;
+		
+		&lt;tr&gt;
+			&lt;td class="ms-toolbar" nowrap="nowrap"&gt;
+				&lt;SharePoint:FormToolBar runat="server" ControlMode="New"/&gt;
+				&lt;SharePoint:ItemValidationFailedMessage runat="server" ControlMode="New"/&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;xsl:call-template name="dvt_1.rowedit"/&gt;
+		&lt;tr&gt;
+			&lt;td class="ms-toolbar" nowrap="nowrap"&gt;
+				&lt;table&gt;
+					&lt;tr&gt;
+						&lt;td width="99%" class="ms-toolbar" nowrap="nowrap"&gt;&lt;IMG SRC="/_layouts/15/images/blank.gif" width="1" height="18"/&gt;&lt;/td&gt;
+						&lt;td class="ms-toolbar" nowrap="nowrap"&gt;
+							&lt;SharePoint:SaveButton runat="server" ControlMode="New" id="savebutton2"/&gt;
+						&lt;/td&gt;
+						&lt;td class="ms-separator"&gt;&amp;#160;&lt;/td&gt;
+						&lt;td class="ms-toolbar" nowrap="nowrap" align="right"&gt;
+							&lt;SharePoint:GoBackButton runat="server" ControlMode="New" id="gobackbutton2"/&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+				&lt;/table&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/xsl:template&gt;
+	&lt;xsl:template name="dvt_1.rowedit"&gt;
+		&lt;xsl:param name="Pos" select="position()"/&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				&lt;table border="0" cellspacing="0" width="100%"&gt;
+					&lt;tr&gt;
+						&lt;td width="290px" class="ms-formlabel"&gt;
+							&lt;h1 class="ipl-stdheader"&gt;
+								&lt;nobr&gt;Record Data Form&lt;/nobr&gt;
+							&lt;/h1&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Submitted By&lt;/nobr&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+						&lt;td width="400px" valign="top" class="ms-formbody"&gt;
+							&lt;H3 id="Submitted_By" class="ms-standardheader"&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Project:          15-1&lt;/nobr&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Project Number: 15-1-1789&lt;/nobr&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;						
+					&lt;/tr&gt;	
+					&lt;tr&gt;						
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Contractor:          B3CK&lt;/nobr&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Designer:          LAN&lt;/nobr&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Description&lt;span class="ms-formvalidation"&gt; *&lt;/span&gt;
+								&lt;/nobr&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+						&lt;td width="400px" valign="top" class="ms-formbody"&gt;
+							&lt;SharePoint:FormField runat="server" id="ff1{$Pos}" ControlMode="New" FieldName="Title" __designer:bind="{ddwrt:DataBind('i',concat('ff1',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@Title')}"/&gt;
+							&lt;SharePoint:FieldDescription runat="server" id="ff1description{$Pos}" FieldName="Title" ControlMode="New"/&gt;
+							&lt;br&gt;&lt;/br&gt;(Description is 55 characters maximum)
+						&lt;/td&gt;
+					&lt;/tr&gt;					
+					&lt;tr&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Specification&lt;/nobr&gt;&lt;span class="ms-formvalidation"&gt; *&lt;/span&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+						&lt;td width="400px" valign="top" class="ms-formbody"&gt;
+							&lt;SharePoint:FormField runat="server" id="ff21{$Pos}" ControlMode="New" FieldName="SpecNum" __designer:bind="{ddwrt:DataBind('i',concat('ff21',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@SpecNum')}"/&gt;
+							&lt;SharePoint:FieldDescription runat="server" id="ff21description{$Pos}" FieldName="SpecNum" ControlMode="New"/&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Drawing Number&lt;/nobr&gt;&lt;span class="ms-formvalidation"&gt; *&lt;/span&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+						&lt;td width="400px" valign="top" class="ms-formbody"&gt;
+							&lt;SharePoint:FormField runat="server" id="ff22{$Pos}" ControlMode="New" FieldName="DrawingNum" __designer:bind="{ddwrt:DataBind('i',concat('ff22',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@DrawingNum')}"/&gt;
+							&lt;SharePoint:FieldDescription runat="server" id="ff22description{$Pos}" FieldName="DrawingNum" ControlMode="New"/&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Detail Description&lt;/nobr&gt;&lt;span class="ms-formvalidation"&gt; *&lt;/span&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+						&lt;td width="400px" valign="top" class="ms-formbody"&gt;
+							&lt;SharePoint:FormField runat="server" id="ff23{$Pos}" ControlMode="New" FieldName="DetailDescription" __designer:bind="{ddwrt:DataBind('i',concat('ff23',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@DetailDescription')}"/&gt;
+							&lt;SharePoint:FieldDescription runat="server" id="ff23description{$Pos}" FieldName="DetailDescription" ControlMode="New"/&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Contractor Comments&lt;/nobr&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+						&lt;td width="400px" valign="top" class="ms-formbody"&gt;
+							&lt;SharePoint:FormField runat="server" id="ff4{$Pos}" ControlMode="New" FieldName="Submitter_Comments" __designer:bind="{ddwrt:DataBind('i',concat('ff4',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@Submitter_Comments')}"/&gt;
+							&lt;SharePoint:FieldDescription runat="server" id="ff4description{$Pos}" FieldName="Submitter_Comments" ControlMode="New"/&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Please Certify Record Data&lt;span class="ms-formvalidation"&gt; *&lt;/span&gt;
+								&lt;/nobr&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+						&lt;td width="400px" valign="top" class="ms-formbody"&gt;
+							&lt;SharePoint:FormField runat="server" id="ff19{$Pos}" ControlMode="New" FieldName="Contractor_Cert" __designer:bind="{ddwrt:DataBind('i',concat('ff19',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@Contractor_Cert')}"/&gt;
+							&lt;SharePoint:FieldDescription runat="server" id="ff19description{$Pos}" FieldName="Contractor_Cert" ControlMode="New"/&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;																																																												
+					&lt;tr id="idAttachmentsRow"&gt;
+						&lt;td nowrap="true" valign="top" class="ms-formlabel" width="20%"&gt;
+							&lt;SharePoint:FieldLabel ControlMode="New" FieldName="Attachments" runat="server"/&gt;
+						&lt;/td&gt;
+						&lt;td valign="top" class="ms-formbody" width="80%"&gt;
+							&lt;SharePoint:FormField runat="server" id="AttachmentsField" ControlMode="New" FieldName="Attachments" __designer:bind="{ddwrt:DataBind('i','AttachmentsField','Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@Attachments')}"/&gt;
+							&lt;script&gt;
+          var elm = document.getElementById(&amp;quot;idAttachmentsTable&amp;quot;);
+          if (elm == null || elm.rows.length == 0)
+          document.getElementById(&amp;quot;idAttachmentsRow&amp;quot;).style.display=&amp;apos;none&amp;apos;;
+        &lt;/script&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+						&lt;xsl:if test="$dvt_1_automode = '1'" ddwrt:cf_ignore="1"&gt;
+						&lt;tr&gt;
+							&lt;td colspan="99" class="ms-vb"&gt;
+								&lt;span ddwrt:amkeyfield="ID" ddwrt:amkeyvalue="ddwrt:EscapeDelims(string(@ID))" ddwrt:ammode="view"&gt;&lt;/span&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+					&lt;/xsl:if&gt;					
+				&lt;/table&gt;			    	
+			    &lt;table&gt;
+			    &lt;tr&gt;
+						&lt;td width="190px" valign="top" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;Certified By&lt;span class="ms-formvalidation"&gt; *&lt;/span&gt;
+								&lt;/nobr&gt;
+							&lt;/H3&gt;
+						&lt;/td&gt;
+						&lt;td width="400px" valign="top" class="ms-formbody"&gt;
+							&lt;SharePoint:FormField runat="server" id="ff20{$Pos}" ControlMode="New" FieldName="RD_Signature" __designer:bind="{ddwrt:DataBind('i',concat('ff20',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@RD_Signature')}"/&gt;
+							&lt;SharePoint:FieldDescription runat="server" id="ff20description{$Pos}" FieldName="RD_Signature" ControlMode="New"/&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+			    &lt;/table&gt;
+			    &lt;table&gt;
+					&lt;tr&gt;
+						&lt;td width="190px" valign="left" class="ms-formlabel"&gt;
+							&lt;H3 class="ms-standardheader"&gt;
+								&lt;nobr&gt;I hereby certify that this Record Data has been reviewed by the Contractor and is in strict conformance with the Contract&lt;/nobr&gt;&lt;br&gt;&lt;/br&gt; Documents as modified by Addendda, Change Orders or Field Orders.&lt;/H3&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+				&lt;/table&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;	</property>
+        <property name="EnableOriginalValue" type="bool">False</property>
+        <property name="Default" type="string">FALSE</property>
+        <property name="Hidden" type="bool">False</property>
+        <property name="ListName" type="string">{$ListId:Lists/Record Data;}</property>
+        <property name="DataSourceID" type="string" />
+        <property name="FireInitialRow" type="bool">True</property>
+        <property name="ManualRefresh" type="bool">False</property>
+        <property name="ViewFlags" type="Microsoft.SharePoint.SPViewFlags, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Hidden, Default</property>
+        <property name="ChromeState" type="chromestate">Normal</property>
+        <property name="AllowHide" type="bool">True</property>
+        <property name="ListDisplayName" type="string" />
+        <property name="SampleData" type="string" null="true" />
+        <property name="AsyncRefresh" type="bool">False</property>
+        <property name="Title" type="string">Record Data</property>
+        <property name="ListId" type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">$ListId:Lists/Record Data;</property>
+        <property name="Description" type="string" />
+        <property name="AllowMinimize" type="bool">True</property>
+        <property name="TitleUrl" type="string" />
+        <property name="CacheXslTimeOut" type="int">86400</property>
+        <property name="DisplayName" type="string">Record Data</property>
+        <property name="PageType" type="Microsoft.SharePoint.PAGETYPE, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">PAGE_NEWFORM</property>
+        <property name="Width" type="string" />
+        <property name="AllowEdit" type="bool">True</property>
+        <property name="ExportMode" type="exportmode">All</property>
+        <property name="Direction" type="direction">NotSet</property>
+        <property name="PageSize" type="int">-1</property>
+        <property name="ViewContentTypeId" type="string" />
+        <property name="HelpUrl" type="string" />
+        <property name="XmlDefinition" type="string" />
+        <property name="UseSQLDataSourcePaging" type="bool">True</property>
+        <property name="TitleIconImageUrl" type="string" />
+        <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+        <property name="HelpMode" type="helpmode">Modeless</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>]]></AllUsersWebPart>
+		</File>
+	</Module>
+</Elements>

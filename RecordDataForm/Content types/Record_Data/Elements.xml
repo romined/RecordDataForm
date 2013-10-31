@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x0100DDD46AAFB056484AB9822183027D575C" Name="Record_Data" Group="IPL_Content" Overwrite="TRUE" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/Record_Data" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />
+			<FieldRef ID="{b85f9eba-73d0-4cc0-b8ae-b0cd8554e56c}" Name="RD_Num" />
+			<FieldRef ID="{5af0fe12-ea94-4f7b-a446-19ec89c39d2a}" Name="RD_Cert_Name" Required="FALSE" Hidden="TRUE" ReadOnly="FALSE" PITarget="" PrimaryPITarget="" PIAttribute="" PrimaryPIAttribute="" Aggregation="" Node="" />
+			<FieldRef ID="{f2d7042c-8a7f-4125-be0a-69090ae34b94}" Name="RD_Cert_Date" Required="FALSE" Hidden="TRUE" ReadOnly="FALSE" PITarget="" PrimaryPITarget="" PIAttribute="" PrimaryPIAttribute="" Aggregation="" Node="" />
+			<FieldRef ID="{a64d570f-7b19-488e-8263-03c830541741}" Name="RD_Status" />
+			<FieldRef ID="{d9212d8a-2d69-429a-8a87-d53b5f84eae0}" Name="Submitter_Comments" />
+			<FieldRef ID="{1fc06bfb-e70b-4c42-a18f-77b460e3e365}" Name="Reviewer_Comments" />
+			<FieldRef ID="{a4069c36-04fd-486a-8889-1aba397b5384}" Name="RE_Response_Date" />
+			<FieldRef ID="{f3b0adf9-c1a2-4b02-920d-943fba4b3611}" Name="TaxCatchAll" Hidden="TRUE" />
+			<FieldRef ID="{8f6b6dd8-9357-4019-8172-966fcd502ed2}" Name="TaxCatchAllLabel" Hidden="TRUE" />
+			<FieldRef ID="{520448e0-bc29-4424-8f9a-bcd532252df5}" Name="Submited_Date" />
+			<FieldRef ID="{68877f9d-b3c7-46d8-aed9-72e019b2c7bb}" Name="Form_Rev" />
+			<FieldRef ID="{b0e1d9b1-1ea9-4218-a5f3-fbca4b5330d2}" Name="Submitted_By" />
+			<FieldRef ID="{f0898151-5d0c-406b-a8af-8e5d6ea0b7e6}" Name="Submitter_Co" />
+			<FieldRef ID="{c79dba91-e60b-400e-973d-c6d06f192720}" Name="PublishingContactEmail" />
+			<FieldRef ID="{27cb1283-bda2-4ae8-bcff-71725b674dbb}" Name="CompanyNumber" />
+			<FieldRef ID="{70e98a8b-0f83-46f3-ade4-fe3333f61d4e}" Name="RD_Project_Num" />
+			<FieldRef ID="{7d70b120-2a5d-492a-ad85-3e7353651034}" Name="RD_Designer" />
+			<FieldRef ID="{91f5c488-e962-46f9-9ef8-b3863109f8dc}" Name="RD_Project" />
+			<FieldRef ID="{de823779-9a0e-494c-9641-b0ce9a1b1c0e}" Name="RD_Owner_x002F_PCM" />
+			<FieldRef ID="{6ba4c17b-5f5e-4399-9364-fe3bb6581b9b}" Name="RD_Contractor" />
+			<FieldRef ID="{84228c8d-b858-4bc5-9e20-4a0d3774acf4}" Name="Contractor_Cert" Required="FALSE" Hidden="FALSE" ReadOnly="FALSE" PITarget="" PrimaryPITarget="" PIAttribute="" PrimaryPIAttribute="" Aggregation="" Node="" />
+			<FieldRef ID="{ae45c8ea-7ce9-49c1-a1ce-4f0158be3bc1}" Name="RD_Signature" Required="TRUE" />
+			<FieldRef ID="{d2e9e638-51f8-4e92-9763-a930539cbb35}" Name="SpecNum" />
+			<FieldRef ID="{6821aa1e-88b7-4a18-a863-a3d8af22efe0}" Name="DrawingNum" />
+			<FieldRef ID="{4d7b07a3-6ee8-42ac-a3a2-94d9d6199ebc}" Name="DetailDescription" />
+			<FieldRef ID="{b46d314a-5c62-4b63-80d2-b78f3b32fd89}" Name="SPFormInternalID" />
+			<FieldRef ID="{2102575f-e596-4c15-aa7b-f309a2052baf}" Name="SubmittalRegisterItemGUID" />
+			<FieldRef ID="{3d4588d9-6bfb-4e8e-bae0-a8606b3d5e28}" Name="ReSubmitReady" />
+			<FieldRef ID="{583d55a6-aad8-4020-af1e-2dcda6bcbdcd}" Name="FormCC" />
+			<FieldRef ID="{491b10ad-9b80-44c1-95ba-1c436e80a633}" Name="Form_Status" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>ListForm</Display>
+					<Edit>ListForm</Edit>
+					<New>ListForm</New>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

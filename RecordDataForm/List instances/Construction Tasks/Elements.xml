@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{f9ce21f8-f437-4f7e-8bc6-946378c850f0}" TemplateType="171" Title="Construction Tasks" Description="" Url="Lists/Construction_Tasks" CustomSchema="Files\Lists\Construction_Tasks\Schema.xml" HyperlinkBaseUrl="https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>
